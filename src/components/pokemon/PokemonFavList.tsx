@@ -8,7 +8,7 @@ interface Props {
 
 export const PokemonFavList: FC<Props> = ({ pokemons }) => {
   return (
-    <Grid.Container gap={2} justify="space-between">
+    <Grid.Container gap={2} justify="flex-start">
       {pokemons.map((id) => (
         <PokemonCardFav key={id} id={id} />
       ))}
